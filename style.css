@@ -76,7 +76,7 @@ nav {
 }
 
 #portfolio .felt1 {
-    background-image: url(pictures/tilmelding.jpg);
+    background-image: url(pictures/ikoner/web.png);
     background-size: cover;
     width: 360px;
     height: 360px;
@@ -104,7 +104,7 @@ nav {
 
 
 #portfolio .felt2 {
-    background-image: url(pictures/program_og_rute.jpg);
+    background-image: url(pictures/ikoner/animation.png);
     background-size: 100%;
     width: 360px;
     height: 360px;
@@ -132,7 +132,7 @@ nav {
 
 
 #portfolio .felt3 {
-    background-image: url(pictures/sponsorer.jpg);
+    background-image: url(pictures/ikoner/indhold.png);
     background-size: 100%;
     width: 360px;
     height: 360px;
@@ -159,15 +159,14 @@ nav {
 
 
 #portfolio .felt4 {
+  background-image: url(pictures/ikoner/ux.png);
     background-size: 100%;
     width: 360px;
     height: 360px;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     position: relative;
-
 }
 
 
@@ -175,7 +174,7 @@ nav {
 
 
 #portfolio .felt5 {
-    background-image: url(pictures/resultater.jpg);
+    background-image: url(pictures/ikoner/music.png);
     background-size: 100%;
     width: 360px;
     height: 360px;
@@ -203,7 +202,7 @@ nav {
 
 
 #portfolio .felt6 {
-    background-image: url(pictures/stoet_haerloebet.jpg);
+    background-image: url(pictures/ikoner/otherprojects.png);
     background-size: 100%;
     width: 360px;
     height: 360px;
@@ -212,7 +211,6 @@ nav {
     justify-content: center;
     position: relative;
 }
-
 #portfolio .overlay6 {
     position: absolute;
     background-color: rgba(118, 107, 47, 0.5);
