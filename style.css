@@ -85,18 +85,33 @@ nav {
 }
 
 /* ------------- Startside --------------- */
-/*
+
 #splash {
-    background-image: url(pictures/homemade-spaghetti-sauce-horizontal-1530890913.jpg);
+    background-image: url(pictures/homemade-spaghetti-sauce-horizontal-1530890913.png);
     width: 100vw;
-    height: 100vh;
+    height: 60vw;
     background-size: cover;
     margin: 0 auto;
 
 }
 
 
+@media (max-width: 1000px) {
+    #splash {
+        width: 150vw;
+        height: 90vw;
+        background-position: -30vw 0%;
+    }
+}
 
+
+@media only screen and (max-width: 400px) {
+    #splash {
+        width: 250vw;
+        height: 160vw;
+        background-position: -81vw 0%;
+    }
+}
 
 /* -------------- Portfolio -------------- */
 
@@ -508,13 +523,17 @@ nav {
     font-size: 3rem;
 }
 
+#web .generelt {
+    margin: 15px;
+}
+
 #box p {
-    color: black;
+    color: white;
     margin: 7px;
 }
 
 #box h2 {
-    color: black;
+    color: white;
     margin: 7px;
 
 }
@@ -538,4 +557,14 @@ nav {
     font-weight: 200;
     font-style: italic;
     color: #db8a8a;
+}
+
+@media only screen and (max-width: 500px) {
+    .vid {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+    }
 }
