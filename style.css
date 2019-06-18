@@ -6,114 +6,238 @@ body {
     background-color: #ffffff;
 }
 
-/* -----------FONTS --------------
 
 
-
-font-family: facto,
-sans-serif;
-font-weight: 300;
-font-style: normal;
-
-font-family: facto,
-sans-serif;
-font-weight: 400;
-font-style: normal;
-
-font-family: facto,
-sans-serif;
-font-weight: 500;
-font-style: normal;
-
-font-family: facto,
-sans-serif;
-font-weight: 700;
-font-style: normal;
-
-font-family: facto,
-sans-serif;
-font-weight: 800;
-font-style: normal;
-
-*/
+/* ---------- Spaghetti-menu ---------------- */
 
 
+header {
+    z-index: 11;
+    position: relative;
+}
 
 
+.hidden {
+    display: none;
+}
 
-
-/* ---------- MENU ---------------- */
-
-
-/* Add a black background color to the top navigation */
 nav {
-    align-items: center;
-    Position: sticky;
+    justify-content: space-between;
+    display: flex;
+    background-color: rgb(140, 199, 145);
+    min-height: 2vw;
+    width: 100%;
+    height: 60px;
+    position: sticky;
     Top: 0;
-    z-index: 2;
 }
 
-.topnav {
-    background-color: #ba7979;
-    overflow: hidden;
 
+/* Menu Mobil */
 
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    color: #ffffff;
-    text-align: center;
-    padding: 14px 16px;
+#menuMobil a {
+    display: block;
     text-decoration: none;
-    font-size: 17px;
+    color: white;
+    margin-top: 6vw;
+    margin-bottom: 10vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    font-style: normal;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #90ba8c;
-    color: black;
+#menuMobil a:hover {
+    color: beige;
+}
+
+#menuknapMobil {
+    z-index: 10;
+    width: 10vw;
+    margin-right: 5vw;
+    margin-top: 1rem;
+
+}
+
+#menuMobil {
+    width: 100%;
+    top: 6.7vh;
+    position: absolute;
+    z-index: 6;
+    font-size: 1.5rem;
+    background-color: rgb(140, 199, 145);
+    transition: .4s;
+    text-align: center;
+    padding-bottom: 29rem;
+    transition: transform 2s ease-in;
+}
+
+
+#menuMobil img {
+    margin: 100px
+}
+
+/*MENUDESKTOP*/
+
+#menuDesktop {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    Top: 0;
+
+}
+
+.navigation {
+    letter-spacing: 5px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 30px;
+    margin-top: 18px;
+}
+
+
+#menuDesktop a {
+    text-decoration: inherit;
+    font-size: 1em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+#menuDesktop a:hover {
+    color: beige;
+
+}
+
+#menuDesktop h4:hover {
+    color: beige;
 }
 
 
 
-.menu {
-    float: right;
+.logo h4 {
+    font-size: 1rem;
+    color: white;
+    margin-top: 18px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 4px;
+    margin-right: 7vw;
 }
 
-/* ------------- Startside --------------- */
+
+
+#menuMobil img {
+    margin-left: 90px;
+    margin-top: 1vw;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+    .navigation {
+        display: none;
+    }
+
+
+    .logo h4 {
+        font-size: 1rem;
+        color: white;
+        margin-top: 0.5vw;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 7px;
+        margin-left: 4vw;
+
+    }
+
+
+    #menuknapMobil {
+        z-index: 10;
+        width: 40px;
+        min-height: 4vw;
+        margin-top: 1vw;
+        margin-right: 4vw;
+        margin-bottom: 2vw;
+        position: absolute;
+        right: 0px;
+        top: 6px;
+
+    }
+
+
+    #menuDesktop {
+        width: 100%;
+        padding-right: 14rem;
+        min-height: 2vw;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    #menuMobil {
+        display: none;
+
+    }
+
+    #menuknapMobil {
+        display: none;
+
+    }
+
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
+
+    }
+
+    #menu li {
+        display: inline-block;
+
+    }
+
+
+}
+
+
+
+/* --------------- SPLASH ------------------*/
 
 #splash {
     background-image: url(pictures/homemade-spaghetti-sauce-horizontal-1530890913.png);
-    width: 98vw;
-    height: 56.5vw;
+    height: 50vw;
+    width: 99vw;
     background-size: cover;
-    margin: 0 auto;
-
-
-
 }
 
 
-@media (max-width: 1000px) {
+@media only screen and (max-width: 375px) {
     #splash {
-        width: 98vw;
-        height: 56.5vw;
-        background-position: cover;
+
+        width: 375px;
+        height: 700px;
+        background-position: -320px 0px;
+
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #splash {
+
+        width: 500px;
+        height: 700px;
+        background-position: -320px 0px;
+
     }
 }
 
 
-@media only screen and (max-width: 400px) {
-    #splash {
-        width: 250vw;
-        height: 160vw;
-        background-position: -76vw 0%;
-    }
-}
+
 
 /* -------------- Portfolio -------------- */
 
@@ -370,7 +494,7 @@ nav {
 
 #box {
     position: relative;
-    background: rgb(140, 199, 145)
+    background: rgb(140, 199, 145);
 }
 
 #box.lille {
@@ -439,6 +563,11 @@ nav {
 
 
 /* --------------- Undersiderne --------------------*/
+
+
+
+/* #web gælder for alle undersiders styling*/
+
 
 #web {
     max-width: 1200px;
