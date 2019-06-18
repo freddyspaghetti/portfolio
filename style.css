@@ -131,12 +131,12 @@ nav {
 }
 
 #portfolio h3 {
-    font-size: 3.3rem;
+    font-size: 3.6rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
     font-style: italic;
     -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: #ffffd2;
+    -webkit-text-stroke-color: black;
 }
 
 
@@ -173,7 +173,7 @@ nav {
 
 #portfolio .overlay1 {
     position: absolute;
-    background-color: rgba(185, 17, 17, 0.5);
+    background-color: rgba(32, 137, 0, 0.5);
     width: 100%;
     height: 100%;
 }
@@ -200,7 +200,7 @@ nav {
 
 #portfolio .overlay2 {
     position: absolute;
-    background-color: rgba(166, 185, 17, 0.5);
+    background-color: rgba(185, 17, 17, 0.5);
     width: 100%;
     height: 100%;
 }
@@ -228,7 +228,7 @@ nav {
 
 #portfolio .overlay3 {
     position: absolute;
-    background-color: rgba(56, 185, 17, 0.5);
+    background-color: rgba(32, 137, 0, 0.5);
     width: 100%;
     height: 100%;
 }
@@ -255,7 +255,7 @@ nav {
 
 #portfolio .overlay4 {
     position: absolute;
-    background-color: rgba(17, 185, 172, 0.5);
+    background-color: rgba(185, 17, 17, 0.5);
     width: 100%;
     height: 100%;
 }
@@ -284,7 +284,7 @@ nav {
 
 #portfolio .overlay5 {
     position: absolute;
-    background-color: rgba(17, 95, 185, 0.5);
+    background-color: rgba(32, 137, 0, 0.5);
     width: 100%;
     height: 100%;
 }
@@ -310,7 +310,7 @@ nav {
 
 #portfolio .overlay6 {
     position: absolute;
-    background-color: rgba(159, 17, 185, 0.5);
+    background-color: rgba(185, 17, 17, 0.5);
     width: 100%;
     height: 100%;
 }
