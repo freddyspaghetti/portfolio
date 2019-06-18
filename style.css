@@ -88,19 +88,21 @@ nav {
 
 #splash {
     background-image: url(pictures/homemade-spaghetti-sauce-horizontal-1530890913.png);
-    width: 100vw;
-    height: 60vw;
+    width: 98vw;
+    height: 56.5vw;
     background-size: cover;
     margin: 0 auto;
+
+
 
 }
 
 
 @media (max-width: 1000px) {
     #splash {
-        width: 150vw;
-        height: 90vw;
-        background-position: -30vw 0%;
+        width: 98vw;
+        height: 56.5vw;
+        background-position: cover;
     }
 }
 
@@ -109,7 +111,7 @@ nav {
     #splash {
         width: 250vw;
         height: 160vw;
-        background-position: -81vw 0%;
+        background-position: -76vw 0%;
     }
 }
 
