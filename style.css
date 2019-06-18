@@ -2,6 +2,10 @@ img {
     width: 100%;
 }
 
+body {
+    background-color: #ffffff;
+}
+
 /* -----------FONTS --------------
 
 
@@ -36,43 +40,44 @@ font-style: normal;
 
 
 
+
+
 /* ---------- MENU ---------------- */
 
 
 /* Add a black background color to the top navigation */
 nav {
     align-items: center;
+    Position: sticky;
+    Top: 0;
+    z-index: 2;
 }
 
 .topnav {
-    background-color: #333;
+    background-color: #ba7979;
     overflow: hidden;
+
 
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
-    color: #f2f2f2;
+    color: #ffffff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    font-family: 'Italiana', serif;
-
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #90ba8c;
     color: black;
 }
 
-/*Add a color to the active/current link*/
-.topnav a.active {
-    background-color: black;
-    color: white;
-}
 
 
 .menu {
@@ -112,11 +117,11 @@ nav {
 
 #portfolio h3 {
     font-size: 3.3rem;
-    font-family: 'Italiana', serif;
-    font-weight: 600;
-    font-style: normal;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: #ffffd2;
 }
 
 
@@ -316,10 +321,8 @@ nav {
 #about .column_left {
     flex-grow: 1;
     flex-basis: 300px;
-    background-image: url(pictures/profilbillede.jpg);
-    background-size: cover;
     margin-top: 2vw;
-    width: 10vw;
+
 
 }
 
@@ -329,4 +332,210 @@ nav {
     height: 30vw;
     width: 10vw;
     margin-top: 2vw;
+    margin: 15px;
+}
+
+#about h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 3rem;
+}
+
+#about p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 29px;
+}
+
+
+
+/* ------ Grøn DR-agtig box -----------*/
+
+#box {
+    position: relative;
+    background: rgb(140, 199, 145)
+}
+
+#box.lille {
+    overflow: hidden;
+    max-height: 150px;
+    transition: max-height 0.5s ease-out;
+
+}
+
+#box.stor {
+    max-height: 3000px;
+    transition: max-height 1s ease-in;
+
+}
+
+/*Laver indhold vha css*/
+#box.lille span:after {
+    content: "+";
+
+
+}
+
+#box.stor span:after {
+    content: "-";
+}
+
+#mere .plus {
+    /* for at få den nærmere på bunde */
+    margin-top: 40px;
+
+
+    /* forat undgå at den opfører sit som et blockelement, og fylder hele bredden */
+    /* Derved sikrer at jeg kan bruge parent text-align:center */
+    display: inline-block;
+
+    /* selve plussets farve og størrelse samt baggrund */
+    color: red;
+    font-weight: 800;
+    width: 20px;
+    height: 20px;
+    background: white;
+}
+
+.green_overlay {
+    /* for at få gradientbaggrunden til at fylde */
+    height: 60px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+
+
+
+    /* for at placere gradientbaggrunden i bunden */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* for at sikre at den fylder hele sin parent ud i bredden */
+    background: linear-gradient(rgba(255, 210, 0, 0), rgb(81, 149, 92));
+
+    /* for at placere plusset i midten */
+    text-align: center;
+}
+
+
+
+/* --------------- Undersiderne --------------------*/
+
+#web {
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+}
+
+#web .column_1 {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#web .column_2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+#web .column_3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#web .txt {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 15px;
+
+}
+
+#web a {
+    text-decoration: none;
+    text-align: center;
+
+}
+
+#web .pic {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 15px;
+
+}
+
+
+#web .zoom_in:hover {
+    animation-name: zoom_in_kf;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+
+
+}
+
+
+@keyframes zoom_in_kf {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.05)
+    }
+
+}
+
+
+
+
+
+
+#web p {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#web h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 3rem;
+}
+
+#box p {
+    color: black;
+    margin: 7px;
+}
+
+#box h2 {
+    color: black;
+    margin: 7px;
+
+}
+
+#web h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+#web h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+#web a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    color: #db8a8a;
 }

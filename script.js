@@ -1,7 +1,14 @@
-function openNav() {
-    document.getElementById("myNav").style.width = "100%";
+/* ------ dr.dk-agtig box ------ */
+
+window.addEventListener("load", sidenVises);
+
+function sidenVises() {
+    console.log("siden vises");
+    document.querySelector("#mere").addEventListener("click", readMore)
 }
 
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
+function readMore() {
+    console.log("readMore:");
+    document.querySelector("#box").classList.toggle("stor");
+    document.querySelector("#box").classList.toggle("lille");
 }
