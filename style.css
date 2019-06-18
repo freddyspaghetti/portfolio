@@ -699,3 +699,13 @@ nav {
         height: 0;
     }
 }
+
+
+
+
+/* ----------- FOOTER -------------*/
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
