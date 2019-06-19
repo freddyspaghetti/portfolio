@@ -210,31 +210,29 @@ nav {
 
 #splash {
     background-image: url(pictures/homemade-spaghetti-sauce-horizontal-1530890913.png);
-    height: 50vw;
+    height: 70vw;
     width: 99vw;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
-
-@media only screen and (max-width: 375px) {
+@media only screen and(min-width: 750px) {
     #splash {
+        display: none;
+    }
+}
 
-        width: 375px;
-        height: 700px;
-        background-position: -320px 0px;
+@media only screen and (max-width: 750px) {
+    #splash {
+        background-image: url(pictures/homemade-spaghetti-sauce-smallere.png);
+        height 100%;
+        width: 100%;
+
 
     }
 }
 
-@media only screen and (max-width: 500px) {
-    #splash {
 
-        width: 500px;
-        height: 700px;
-        background-position: -320px 0px;
-
-    }
-}
 
 
 
