@@ -694,7 +694,6 @@ nav {
     .vid {
         position: relative;
         padding-bottom: 56.25%;
-        rgba(185, 17, 17, 0.5);
         /* 16:9 */
         padding-top: 25px;
         height: 0;
@@ -703,12 +702,10 @@ nav {
 
 
 
-
 /* ----------- FOOTER -------------*/
 
 footer {
     margin: 30px;
-
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
