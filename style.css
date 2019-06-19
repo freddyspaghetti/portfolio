@@ -261,7 +261,8 @@ nav {
     flex-basis: 350px;
     display: flex;
     flex-direction: row;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     justify-content: center;
 
 }
