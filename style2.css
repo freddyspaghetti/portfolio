@@ -1,0 +1,133 @@
+/* -------------- FONTS ---------------------- */
+
+@font-face {
+    font-family: 'spaghetti-sans';
+    src: url('fonts/spaghetti-sans-webfont.woff2') format('woff2'),
+        url('fonts/spaghetti-sans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* -------------- SPAGHETTI-MENU --------------*/
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+/* ----------------- Landing Page -------------------*/
+
+img {
+    width: 100%;
+}
+
+
+#spaghetti h1 {
+    color: white;
+    text-align: center;
+    font-size: 12rem;
+    margin: 0;
+    font-family: 'spaghetti-sans';
+    font-weight: 100;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.splash {
+    background-image: url(pictures/spaghetti_hvid.svg);
+    width: 29vw;
+    height: 29vw;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+@keyframes bgcolor {
+    0% {
+        background-color: #45a3e5
+    }
+
+    30% {
+        background-color: #66bf39
+    }
+
+    60% {
+        background-color: #eb670f
+    }
+
+    90% {
+        background-color: #f35
+    }
+
+    100% {
+        background-color: #864cbf
+    }
+}
+
+body {
+    font-size: 16px;
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+
+
+
+
+/* --------------- Startside --------------*/
