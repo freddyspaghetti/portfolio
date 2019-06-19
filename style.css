@@ -240,11 +240,35 @@ nav {
 
 
 /* -------------- Portfolio -------------- */
+#portfolio body {
+    max-width: 1200px;
+    margin: auto;
+}
+
 
 #portfolio {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
 }
+
+#portfolio .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+
+#portfolio .column {
+    flex-grow: 1;
+    flex-basis: 350px;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: center;
+
+}
+
+
 
 
 #portfolio .txt {
@@ -267,23 +291,9 @@ nav {
 
 
 
-#portfolio .container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    text-align: center;
-}
 
+/* --------- Enkelte portfolio billeder ---------- */
 
-#portfolio .column {
-    flex-grow: 1;
-    flex-basis: 350px;
-    display: flex;
-    flex-direction: row;
-    margin-top: 2.3vw;
-    text-align: center;
-
-}
 
 #portfolio .felt1 {
     background-image: url(pictures/ikoner/web.png);
